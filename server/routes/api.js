@@ -19,10 +19,6 @@ router.get('/recipes/:ingredient', async function(req, res) {
         results = JSON.parse(data.toString()).results
 
 
-
-
-
-
         res.end()
     })
 })
