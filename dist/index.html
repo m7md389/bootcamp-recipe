@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Recipe</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mitr" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav-container">
+        <input type="text" id="ingredient-input" placeholder="Enter an ingredient here ..">
+        <input type="button" id="submit-ingredient" value="Search!">
+    </div>
+
+    <div class="recipes-container"></div>
+
+    <script id="recipe-template" type="text/x-handlebars-template">
+        {{#each recipe}}
+            <div class="recipe-container" data-name="Tomato Soup">
+                <a href={{href}}>{{title}}</a>
+                <br>
+                <img src={{thumbnail}}>
+
+                <div class="ingredients-container">
+                    <dl>Ingredients</dl>
+                    <ul>
+                        {{#each ingredients}}
+                            <li>{{this}}</li>
+                        {{/each}}
+                        </ol>
+                    </ul>
+                </div>
+            </div>
+        {{/each}}
+    </script>
+
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="./handlebars/dist/handlebars.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
