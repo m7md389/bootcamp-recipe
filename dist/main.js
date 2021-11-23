@@ -1,13 +1,5 @@
 const renderer = new Renderer()
 
-$.ajax({
-    method: "GET",
-    url: `/recipes/cheese`,
-    success: function(recipes) {
-        renderer.render(recipes)
-    }
-})
-
 $("#submit-ingredient").on('click', function() {
     const ingredient = $("#ingredient-input").val()
     $.ajax({
