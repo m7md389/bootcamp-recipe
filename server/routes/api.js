@@ -2,10 +2,6 @@ const express = require('express')
 const urllib = require("urllib")
 const router = express.Router()
 
-
-
-
-
 router.get('/sanity', function(req, res) {
     res.send("ok")
 })
@@ -28,7 +24,5 @@ router.get('/recipes/:ingredient', async function(req, res) {
         res.send(results)
     })
 })
-
-
 
 module.exports = router

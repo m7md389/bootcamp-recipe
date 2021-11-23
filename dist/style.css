@@ -42,8 +42,6 @@ body {
     font-size: 35px;
     color: #c23616;
     text-decoration: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .recipe-container>img {
@@ -67,4 +65,17 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+}
+
+.recipe-404-container {
+    font-family: "Lobster";
+    text-align: center;
+}
+
+.recipe-404-container>h1 {
+    font-size: 500px;
+}
+
+.recipe-404-container>h1 {
+    font-size: 30px;
 }
