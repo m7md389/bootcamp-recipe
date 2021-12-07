@@ -12,11 +12,11 @@ $("#submit-ingredient").on('click', function() {
         method: "GET",
         url: `/recipes/${ingredient}`,
         success: function(recipes) {
-            if (recipes === 0) {
+            if (recipes.length === 0) {
                 renderer.renderError()
-                return null
+            } else {
+                renderer.render(recipes)
             }
-            renderer.render(recipes)
         },
         error: (xhr, text, error) => {
             alert(text)

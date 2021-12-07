@@ -70,12 +70,13 @@ body {
 .recipe-404-container {
     font-family: "Lobster";
     text-align: center;
+    color: #c23616;
 }
 
 .recipe-404-container>h1 {
-    font-size: 500px;
+    font-size: 100px;
 }
 
-.recipe-404-container>h1 {
-    font-size: 30px;
+.recipe-404-container>h2 {
+    font-size: 40px;
 }
